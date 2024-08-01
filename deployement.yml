@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: websiteimage
-        image: Charvichethna/websiteimage
+        image: charvichethna/websiteimage
         ports:
         - containerPort: 80
