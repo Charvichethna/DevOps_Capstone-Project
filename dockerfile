@@ -1,6 +1,5 @@
-FROM ubuntu:latest
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && \
-    apt-get install -y apache2
-EXPOSE 80
-CMD ["apachectl", "-D", "FOREGROUND"]
+FROM ubuntu
+RUN apt-get update
+RUN apt-get update apache2 -y
+ADD ./var/www/html
+ENTRYPOINT apachectl -D FOREGROUND
