@@ -20,3 +20,4 @@ spec:
         image: charvichethna/websiteimage
         ports:
         - containerPort: 80
+
